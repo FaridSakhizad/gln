@@ -1,21 +1,21 @@
-import './App.css'
+import './App.css';
+
+import Img from './assets/img-alpha-0.jpg';
 
 function App() {
   return (
     <div>
-      <h1>Galanna Cleaning</h1>
-      <hr />
-      <br />
-      <h2>Чисто • Конкретно • Дущисто</h2>
-      <br />
-      <h3>Оля и Аня лучшие кисечки во всех Великих Калгарях</h3>
-      <br />
-      <h2>ПОЭТОМУ</h2>
-      <br />
-      &darr;
-      <br />
-      <h1><a href="tel:587 227 32 96">Коли подлохматить чо звоните в рэльсу</a></h1>
-      <h4>&copy; Galanna Cleaning 2026. Не хворайте</h4>
+      <img
+        src={Img}
+        width={'100%'}
+        height={'auto'}
+        alt="Galanna Cleaning. Clean Spaces. Better Lives"
+        style={{
+          objectFit: 'cover',
+          objectPosition: 'center',
+          display: 'block',
+      }}
+      />
     </div>
   )
 }
